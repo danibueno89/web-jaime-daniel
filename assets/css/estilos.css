@@ -98,7 +98,7 @@ body > header:first-of-type {
   width: max-content;
   height: max-content;
   color: white;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(0, 0, 0, 0);
   font-size: 5rem;
   text-align: center;
   font-family: "Inria Serif", serif;
