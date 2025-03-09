@@ -235,10 +235,8 @@ main {
 }
 
 .seccion_03 p {
-  text-decoration: dotted;
   box-shadow: 0 5px 5px -5px black;
   padding: 3rem 2rem;
-  text-decoration: underline;
   font-size: 1.7rem;
   text-align: center;
 }
