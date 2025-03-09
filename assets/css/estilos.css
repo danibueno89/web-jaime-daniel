@@ -1,21 +1,356 @@
-/* 
-<weight>: Use a value from 100 to 900
- <uniquifier>: Use a unique and descriptive class name
-*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap");
 
 /*
-.inter-<uniquifier> {
-  font-family: "Inter", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+=================================== 
+    QUITAMOS EL MARGEN Y ESPACIADO POR DEFECTO DEL NAVEGADOR.
+===================================
+*/
+* {
+  margin: 0;
+  padding: 0;
 }
+
+/*
+=================================== 
+    APLICAMOS ESTILOS GENÉRICOS
+===================================
+*/
+body {
+  font-size: 12pt;
+  color: black;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.tarjeta {
+  background-color: #1c5d8c;
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+/*
+=================================== 
+    CLASE CONTENEDOR QUE PERMITE QUE TODO EL CONTENIDO DE LA PÁGINA QUE LO INCLUYA TENGA EL MISMO ANCHO Y ESTÉ ALINEADO
+===================================
+*/
+.contenedor {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+=================================== 
+    CABECERA
+===================================
 */
 
+body > header:first-of-type {
+  background-color: #eedb1c;
+  height: 150px;
+}
 
-.inter-font {
-    font-family: "Inter", serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-  }
+.contenedorCabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.contenedorCabecera img {
+  height: 85px;
+  width: 75px;
+}
+
+.contenedorCabecera article {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  font-size: 2rem;
+}
+
+/*
+=================================== 
+    BANNER (DENTRO DE MAIN)
+===================================
+*/
+.banner {
+  height: 600px;
+  position: relative;
+}
+
+.banner img {
+  height: 100%;
+  width: 100%;
+  filter: brightness(0.4);
+}
+
+.banner h1 {
+  position: absolute;
+  margin: auto;
+  inset: 0;
+  width: max-content;
+  height: max-content;
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+  font-family: "Inria Serif", serif;
+}
+
+/*
+=================================== 
+    MAIN
+===================================
+*/
+main {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+/*
+=================================== 
+    PRIMERA SECCIÓN DEL MAIN
+===================================
+*/
+.seccion_01 {
+  display: flex;
+  flex-direction: column;
+}
+
+.seccion_01 h2 {
+  margin-bottom: 4rem;
+}
+
+.seccion_01 article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.seccion_01 article div {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: 0 5px 5px -5px black;
+}
+
+.seccion_01 h3 {
+  font-size: 1.3rem;
+}
+
+.seccion_01 footer {
+  display: flex;
+  justify-content: center;
+  width: 10%;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  gap: .5rem
+}
+
+.slider {
+  background-color: #80a4bf;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  box-shadow: 0 5px 5px -5px black;
+}
+
+.slider:first-child {
+  background-color: black;
+}
+
+/*
+=================================== 
+    SEGUNDA SECCIÓN DEL MAIN
+===================================
+*/
+.seccion_02 {
+  margin-top: 5rem;
+  display: flex;
+  height: 400px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1em;
+  padding-left: 0;
+}
+
+.seccion_02 article {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.seccion_02 img {
+  height: 600px;
+  margin-left: -5px;
+}
+
+.seccion_02 h2 {
+  width: 100%;
+  font-size: 2.3rem;
+}
+
+.seccion_02 p {
+  font-size: 1.3rem;
+}
+
+/*
+=================================== 
+    TERCERA SECCIÓN DEL MAIN
+===================================
+*/
+.seccion_03 {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.seccion_03 h2 {
+  font-size: 2rem;
+}
+
+.seccion_03 article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.seccion_03 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 55%;
+}
+
+.seccion_03 p {
+  text-decoration: dotted;
+  box-shadow: 0 5px 5px -5px black;
+  padding: 3rem 2rem;
+  text-decoration: underline;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.seccion_03 img {
+  border-radius: 10px;
+  box-shadow: 0 10px 10px -5px black;
+  width: 40%;
+}
+
+/*
+=================================== 
+    CUARTA SECCIÓN DEL MAIN
+===================================
+*/
+.seccion_04 {
+  margin-top: 7rem;
+  display: flex;
+  height: 400px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1em;
+  padding-right: 0;
+}
+
+.seccion_04 article {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.seccion_04 img {
+  height: 600px;
+  margin-right: -5px;
+}
+
+.seccion_04 h2 {
+  width: 100%;
+  font-size: 2.3rem;
+}
+
+.seccion_04 p {
+  font-size: 1.5rem;
+}
+
+/*
+=================================== 
+    QUINTA SECCIÓN DEL MAIN
+===================================
+*/
+.seccion_05 {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0;
+}
+
+.seccion_05 h2 {
+  margin-bottom: 4rem;
+  font-size: 2rem;
+}
+
+.seccion_05 article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.seccion_05 article div {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  box-shadow: 0 5px 5px -5px black;
+}
+
+.seccion_05 h3 {
+  font-size: 1.7rem;
+  height: 20%;
+}
+
+.seccion_05 p {
+  height: fit-content;
+  font-size: 1.2em;
+  height: 70%;
+}
+
+/*
+=================================== 
+    PIE DE PÁGINA
+===================================
+*/
+body > footer:last-of-type {
+  background-color: #eedb1c;
+  height: 300px;
+  margin-top: 5rem;
+}
+
+.contenedorPie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.contenedorPie img {
+  height: 150px;
+  width: 130px;
+}
+
+.contenedorPie p {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 300;
+}

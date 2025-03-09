@@ -4,19 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yale School of Art</title>
-    <link rel="stylesheet" href="assets/css/stilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+    <title>Yale School of Art - Redesigned</title>
+    <link rel="stylesheet" href="./assets/css/estilos.css">
 </head>
 
 <body>
     <header>
-        <section class="container">
-            <img src="assets/img/logo.png" alt="logo-cabecera">
+        <section class="contenedor contenedorCabecera">
+            <img src="./assets/img/logo.png" alt="logo-cabecera">
             <article>
                 <a href="#">Apply</a>
                 <a href="#">Exhibitions</a>
@@ -26,30 +21,30 @@
             </article>
         </section>
     </header>
-    <main>
-        <section class="banner-container">
-            <img src="/assets/img/banner.png" alt="fondo-banner">
-            <span>Yale School of Art</span>
-        </section>
-        <section>
-            <header>Community Bulletin</header>
+    <aside class="banner">
+        <img src="/assets/img/banner.png" alt="fondo-banner">
+        <h1>Yale School<br>of Art</h1>
+    </aside>
+    <main class="contenedor">
+        <section class="seccion_01">
+            <h2>Community Bulletin Board</h2>
             <article>
-                <div>
-                    <header>From our friends at the Yale Center</header>
+                <div class="tarjeta">
+                    <h3>From our friends at the Yale Center</h3>
                     <p>
                         The Yale Center for Environmental Justice is in the process of planning our fourth annual Global
                         Environmental Justice Conference, with this year.
                     </p>
                 </div>
-                <div>
-                    <header>Faculty/Alumni: Post Your Art</header>
+                <div class="tarjeta">
+                    <h3>Faculty/Alumni: Post Your Art</h3>
                     <p>
                         The Yale Arts Apprenticeship Program is an initiative that connects Yale undergraduates,
                         particularly those on financial aid, with professionals.
                     </p>
                 </div>
-                <div>
-                    <header>Mapping public art in new heaven</header>
+                <div class="tarjeta">
+                    <h3>Mapping public art in new heaven</h3>
                     <p>
                         Hey everyone! I’ve been mapping public art in New Haven as part of my nonprofit project
                         ArtAround and I’d love to invite you to join me or just check it out.
@@ -57,15 +52,15 @@
                 </div>
             </article>
             <footer>
-                <img src="#" alt="slider-controls-active">
-                <img src="#" alt="slider-controls">
-                <img src="#" alt="slider-controls">
+                <div class="slider"></div>
+                <div class="slider"></div>
+                <div class="slider"></div>
             </footer>
         </section>
-        <section>
-            <img src="assets/img/the one old.png" alt="el-viejo">
+        <section class="seccion_02 tarjeta">
+            <img src="./assets/img/hombre-mayor.png" alt="hombre-mayor">
             <article>
-                <header>Mel<br>Bochner’s</header>
+                <h2>Mel<br>Bochner’s</h2>
                 <p>I would like to note Mel Bochner’s passing on February 12, 2025. He was a valued colleague, a
                     brilliant interlocutor, never brought less than his A-game to studio visits and reviews, he had a
                     voice that brought insight to the conversation, and had an outstanding sense of humor. I was
@@ -74,45 +69,52 @@
                     —Rochelle Feinstein, Emerita Professor, School of Art, 1994-2017</p>
             </article>
         </section>
-        <section>
-            <header>Happening at Soa</header>
-            <article>
-                <p>
-                    See the developing Spring 2025 Visiting Artist lecture schedule here >
-                </p>
-                <p>
-                    Spring 2025 exhibitions + schedule here >
-                </p>
-            </article>
-            <article>
-                <img src="assets/img/calendar.png" alt="calendar">
-            </article>
-        </section>
-        <section>
-            <article>
-                <header>About us</header>
-                <img src="assets/img/wallpaper-about-us.png" alt="wallpaper-about-us">
-            </article>
-        </section>
-        <section>
-            <header>Calendars & Newsletters</header>
+        <section class="seccion_03">
+            <h2>Happening at Soa</h2>
             <article>
                 <div>
-                    <header>NEW CALENDARS BEGINNING SUMMER 2020</header>
+                    <p class="tarjeta">
+                        See the developing Spring 2025 Visiting Artist lecture schedule here >
+                    </p>
+                    <p class="tarjeta">
+                        Spring 2025 exhibitions + schedule here >
+                    </p>
+                </div>
+                <img src="./assets/img/calendario.png" alt="calendario">
+            </article>
+        </section>
+        <section class="seccion_04 tarjeta">
+            <article>
+                <h2>About us</h2>
+                <p>
+                    The School of Art is one of Yale’s Graduate & Professional Schools conferring MFA degrees in Graphic
+                    Design, Painting/Printmaking, Photography, and Sculpture; and offers undergraduate-level art courses
+                    to Yale College students. Our website exists as an ongoing collaborative experiment in digital
+                    publishing and information sharing. It functions as a wiki—all members of the School of Art
+                    community have the ability to add new, and edit most existing content.
+                </p>
+            </article>
+            <img src="./assets/img/imagen-sobre-nosotros.png" alt="sobre-nosotros">
+        </section>
+        <section class="seccion_05">
+            <h2>Calendars & Newsletters</h2>
+            <article>
+                <div class="tarjeta">
+                    <h3>NEW CALENDARS BEGINNING SUMMER 2020</h3>
                     <p>
-                        Public Calendar >><br>
+                        <u>Public Calendar >></u> <br>
                         Containing those events open to the public.
                     </p>
                     <p>
-                        School of Art in the World >><br>
+                        <u>School of Art in the World >></u><br>
                         Containing events and exhibitions hosted by, led by, or featuring
                     <p>
-                        Community Calendar >><br>
+                        <u>Community Calendar >></u><br>
                         Containing those events open only to the SoA community.
                     </p>
                 </div>
-                <div>
-                    <header>Get news from the Yale School of Art in your inbox</header>
+                <div class="tarjeta">
+                    <h3><u>Get news from the Yale School of Art in your inbox</u></h3>
                     <p>
                         We publish two newsletters during the academic year:
                     </p>
@@ -124,42 +126,44 @@
                         events in New Haven.
                     </p>
                 </div>
-                <div>
-                    <header>A message from Communications:</header>
+                <div class="tarjeta">
+                    <h3>A message from Communications:</h3>
                     <p>
                         All members of the SoA community are invited to edit the majority of the wiki however they like,
                         but we ask that any non-curricular projects or initiatives that you would like to share be added
                         to this section of the homepage.
-                        Students are also invited to reach out to Assistant Director of Communications Lindsey Mancini
-                        if they would like additional support
+                        Students are also invited to reach out to Assistant Director of Communications <u>Lindsey
+                            Mancini</u> if they would like additional support
                     </p>
                 </div>
             </article>
         </section>
     </main>
     <footer>
-        <section>
-            <p>Support the School<br>
-                Visting<br>
-                Instagram<br>
-                Facebook
-            </p>
-        </section>
-        <section>
-            <p>
-                Youtube<br>
-                Contact<br>
-                Sitemap<br>
-                Accessibility at Yale 
-            </p>
-        </section>
-        <section>
-            <img src="assets/img/logo.png" alt="logo-footer">
-        </section>
-        <section>
-            <p>
-                &copy; Yale School of Art 2025
-            </p>
+        <section class="contenedorPie contenedor">
+            <article>
+                <p>Support the School<br>
+                    Visting<br>
+                    Instagram<br>
+                    Facebook
+                </p>
+            </article>
+            <article>
+                <p>
+                    Youtube<br>
+                    Contact<br>
+                    Sitemap<br>
+                    Accessibility at Yale
+                </p>
+            </article>
+            <article>
+                <img src="./assets/img/logo.png" alt="logo-pie">
+            </article>
+            <article>
+                <p>
+                    &copy; Yale School of Art 2025
+                </p>
+            </article>
         </section>
     </footer>
 </body>
