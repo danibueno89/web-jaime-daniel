@@ -88,7 +88,7 @@ body > header:first-of-type {
 .banner img {
   height: 100%;
   width: 100%;
-  filter: brightness(0.4);
+  filter: brightness(0.2);
 }
 
 .banner h1 {
